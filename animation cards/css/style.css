@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    color: #303554;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem,5rem));
+}
+.card {
+    border-radius: 1rem;
+    height: 17rem;
+    padding: 2rem;
+    width: 17rem;
+    position: relative;
+    box-shadow: 2px 2px 2px #c8c8c8, -1.5px -1.5px 2px #c8c8c8;
+    cursor: pointer;
+}
+.card::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 0 0 0;
+    width: 20%;
+    height: 20%;
+    transition: all 250ms ease-in-out;
+}
+.card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 1rem 0;
+    width: 20%;
+    height: 20%;
+    transition: all 250ms ease-in-out;
+}
+.card-1::before {
+    border-top: 0.15rem #0a5af6 solid;
+    border-left: 0.15rem #0a5af6 solid;
+}
+.card-1::after {
+    border-bottom: 0.15rem #0a5af6 solid;
+    border-right: 0.15rem #0a5af6 solid;
+}
+.card-2::before {
+    border-top: 0.15rem #ef5b44 solid;
+    border-left: 0.15rem #ef5b44 solid;
+}
+.card-2::after {
+    border-bottom: 0.15rem #ef5b44 solid;
+    border-right: 0.15rem #ef5b44 solid;
+}
+.card-3::before {
+    border-top: 0.15rem #fdbf29 solid;
+    border-left: 0.15rem #fdbf29 solid;
+}
+.card-3::after {
+    border-bottom: 0.15rem #fdbf29 solid;
+    border-right: 0.15rem #fdbf29 solid;
+}
+.card-4::before {
+    border-top: 0.15rem #693ec9 solid;
+    border-left: 0.15rem #693ec9 solid;
+}
+.card-4::after {
+    border-bottom: 0.15rem #693ec9 solid;
+    border-right: 0.15rem #693ec9 solid;
+}
+.card-1:hover {
+    background-color: #edf0f6;
+}
+.card-2:hover {
+    background-color: #f3e8e7;
+}
+.card-3:hover {
+    background-color: #fef7e6;
+}
+.card-4:hover {
+    background-color: #edeaf3;
+}
+.card:hover::after, .card:hover::before {
+    width: 50%;
+    height: 50%;
+}
+   
+.card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.card h3 {
+    margin: 1rem 0;
+}
+.card p {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #adadad;
+}
+.card-1 i {
+    color: #0a5af6;
+}
+.card-2 i {
+    color: #ef5b44;
+}
+.card-3 i {
+    color: #fdbf29;
+}
+.card-4 i {
+    color: #693ec9;
+}
+
